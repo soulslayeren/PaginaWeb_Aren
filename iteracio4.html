@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <link rel="icon" type="icon" href="img/favicon.ico" sizes="96x96" />
+    <meta charset="UTF-8">
+    <title>Formulari</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Vampiro One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Trispace' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header>
+        <h1>Formulari</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">SOBRE MI</a>
+        <a href="iteracio2.html">HORARI</a>
+        <a href="iteracio3.html">GALERIA</a>
+        <a href="iteracio4.html">FORMULARI</a>
+    </nav>
+
+    <div class="info">
+        <p>Apartat de formulari</p>
+    </div>
+
+    <main>
+        <section>
+            <form method="POST" action="https://alumnat.cat/form" enctype="multipart/form-data">
+                <h1>Formulari de Selecció de Treballador</h1>
+
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" placeholder="Escriu el teu nom" required>
+
+                <label for="cognoms">Cognoms:</label>
+                <input type="text" id="cognoms" name="cognoms" placeholder="Escriu els teus cognoms" required>
+
+                <label for="edat">Edat:</label>
+                <input type="number" id="edat" name="edat" placeholder="Escriu la teva edat" required>
+
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" placeholder="Escriu el teu DNI" required>
+
+                <label for="color">Color preferit:</label>
+                <input type="color" id="color" name="color">
+
+                <label for="mail">Mail:</label>
+                <input type="email" id="mail" name="mail" placeholder="Escriu el teu correu" required>
+
+                <label for="estudis">Estudis:</label>
+                <select id="estudis" name="estudis" required>
+                    <option value="">Selecciona un nivell d'estudis</option>
+                    <option value="primaria">Primària</option>
+                    <option value="secundaria">Secundària</option>
+                    <option value="batxillerat">Batxillerat</option>
+                    <option value="universitari">Universitari</option>
+                    <option value="cfgm">CFGM</option>
+                    <option value="cfgs">CFGS</option>
+                </select>
+
+                <div class="radio-group">
+                    <label>Sexe:</label>
+                    <label><input type="radio" name="sexe" value="home" required> Home</label>
+                    <label><input type="radio" name="sexe" value="dona"> Dona</label>
+                    <label><input type="radio" name="sexe" value="altres"> Altres</label>
+                </div>
+
+                <label for="explicacio">Explicació:</label>
+                <textarea id="explicacio" name="explicacio" rows="4"
+                    placeholder="Explica per què vols el lloc"></textarea>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="privacitat" name="privacitat" required>
+                    <label for="privacitat">Accepto la política de privacitat</label>
+                </div>
+
+                <label for="fotografia">Fotografia:</label>
+                <input type="file" id="fotografia" name="fotografia" accept="image/*" required>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>INS JOAQUIM MIR - <span>Aren Nicolas</span> - 2024</p>
+    </footer>
+
+</body>
+
+</html>

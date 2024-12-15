@@ -1,0 +1,268 @@
+/*General*/
+body {
+  font-family: 'Trispace';
+  background-image: url(img/White\ Soot\ Sweet.jpg);
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding-bottom: 2.5em;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #8c6239;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  border-bottom: 4px solid #4a3c2c;
+}
+
+header h1 {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+nav {
+  background-color: #86622b;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+a {
+  color: #ffffff;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  font-family: 'Vampiro One';
+  font-size: 22px;
+  color: #000000;
+  font-size: 1.8em;
+}
+
+h3 {
+  color: #000000;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.perfil {
+  width: 15%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #d1b89f;
+}
+
+.info {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f7e7ce;
+  border-radius: 10px;
+  border: 2px solid #8c6239;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  max-width: 80%;
+}
+
+main {
+  background-color: #fffaf3;
+  margin: 30px auto;
+  margin-bottom: 80px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid #8c6239;
+  max-width: 80%;
+}
+
+.ar {
+  text-align: center;
+}
+
+aside {
+  background-color: #f3d9b5;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border-left: 4px solid #8c6239;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+/*Horari*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #ffffff;
+}
+
+table thead {
+  background-color: #5a3825;
+  color: white;
+  text-align: center;
+}
+
+table td,
+table th {
+  border: 1px solid #d1b89f;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #f2e0d6;
+}
+
+table tbody tr td:first-child {
+  background-color: #8c6239;
+  color: white;
+  font-weight: bold;
+}
+
+.ahora {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f9e2b3;
+}
+
+.modulsinfo {
+  flex: 1;
+}
+
+.mirimg {
+  width: 150px;
+  height: auto;
+  margin-left: 20px;
+  border-radius: 10px;
+  border: 2px solid #d1b89f;
+}
+
+/*Galeria*/
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 2px;
+}
+
+.imatge {
+  border-radius: 10px;
+  border: 2px solid #d1b89f;
+  margin: 2px;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imatge img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imatge img:hover {
+  transform: scale(1.1);
+}
+
+/*Formulari*/
+form {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fffaf3;
+  border-radius: 12px;
+  display: grid;
+  grid-gap: 15px;
+}
+
+form h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #8c6239;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  color: #8c6239;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #8c6239;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #ffffff;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  padding: 12px 20px;
+  background: #8c6239;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.checkbox-group,
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+input[type="color"] {
+  padding: 0;
+  height: 40px;
+}
+
+/*Footer*/
+footer {
+  background-color: #8c6239;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer span {
+  font-style: italic;
+}
